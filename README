@@ -27,19 +27,24 @@ with the details and we'll fix it ASAP!
 
 
 SUPPORTED CONFIGURATION:
- - Platform: Linux / Unix.
- - Web server: Apache 2.2 and newer.
+ - Platform: Windows.
+ - Web server: IIS 7 / IIS 7.5 / Apache 2.2 and newer.
  - PHP 5.2.3 and newer (PHP's safe_mode must be disabled and simplexml,
    filter, and json must be installed).
  - Database: MySQL 5 and newer.
 
-For complete system requirements, please refer to:
-  http://codex.gallery2.org/Gallery3:Requirements
+For complete IIS system requirements, please refer to:
+  http://codex.gallery2.org/Gallery3:Installation_on_Windows_Server_2008_and_IIS7#Requirements
 
+For complete APACHE system requirements, please refer to:
+  http://codex.gallery2.org/Gallery3:Installation_on_Windows_and_Apache
 
 INSTALLING AND UPGRADING INSTRUCTIONS:
 For comprehensive instructions, The online User Guide is your best resource:
   http://codex.gallery2.org/Gallery3:User_guide
+
+WINDOWS INSTALLATION INSTRUCTIONS:
+  http://codex.gallery2.org/Gallery3:Installation_on_Windows_Server_2008_and_IIS7
 
 There are also simple instructions below.  NOTE: You can upgrade from
 beta 1 and beyond, but not from alpha releases.
@@ -49,17 +54,10 @@ INSTALLATION VIA THE WEB:
 - Point your web browser at gallery3/installer/ and follow the
   instructions.
 
-
-INSTALLATION FROM THE COMMAND LINE:
-- php installer/index.php [-h host] [-u user] [-p pass] [-d dbname]
-
- Command line parameters:
- -h     Database host          (default: localhost)
- -u     Database user          (default: root)
- -p     Database user password (default: )
- -d     Database name          (default: gallery3)
- -x     Table prefix           (default: )
-
+WINDOWS PLATFORM MODULE INSTALL:
+After install, log into your Gallery web site as an administrator and activate
+the module in the Admin -> Modules menu. Once activated you will be able to 
+add the module to the dashboard from the dashboard content box.
 
 BUGS?
 Go to http://apps.sourceforge.net/trac/gallery/ click the "login" link
@@ -71,4 +69,5 @@ QUESTIONS, PROBLEMS:
  - Check out the gallery3 FAQ http://codex.gallery2.org/Gallery3:FAQ
  - Post to the Gallery 3 forums: http://gallery.menalto.com/forum/96
  - Email gallery-devel@lists.sourceforge.net
+ - Email Windows Support: Ranger187@Gmail.com
 
